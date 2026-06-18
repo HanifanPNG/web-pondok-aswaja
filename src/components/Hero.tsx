@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import aswajaImg from '../../assets/img/aswajapp.jpeg';;
 
 const Hero = () => {
   return (
@@ -6,7 +7,7 @@ const Hero = () => {
       <img
         alt="Santri Aswaja"
         className="absolute inset-0 w-full h-full object-cover object-center"
-        src="/assets/img/aswajapp.jpeg"
+        src={aswajaImg}
       />
       <div className="absolute inset-0 hero-overlay"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
