@@ -66,7 +66,7 @@ const Galeri = () => {
       >
         {/* Dark teal gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#1b3a3c]/95 via-[#1b3a3c]/80 to-[#1b3a3c]/60" />
-        <div className="max-w-6xl mx-auto relative z-10">
+        <div className="max-w-6xl mx-auto relative z-10" data-aos="fade-up">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
             Galeri Pondok
           </h1>
@@ -109,6 +109,8 @@ transition-all duration-150 ease-out ${
               key={photo.id}
               className="group relative rounded-2xl overflow-hidden cursor-pointer bg-[#1c2128] shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
               onClick={() => openLightbox(idx)}
+              data-aos="fade-up"
+              data-aos-delay={`${idx % 3 * 100}`}
             >
               <img
                 src={photo.src}

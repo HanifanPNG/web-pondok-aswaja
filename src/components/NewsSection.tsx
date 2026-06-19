@@ -38,7 +38,7 @@ const NewsSection = () => {
     <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6 sm:mb-8 gap-4">
-          <div>
+          <div data-aos="fade-up">
             <h2 className="text-2xl sm:text-3xl font-bold text-aswaja-teal mb-4">
               Berita Terkini
             </h2>
@@ -48,7 +48,7 @@ const NewsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-          <div className="relative h-[350px] sm:h-[400px] lg:h-[450px] rounded-xl overflow-hidden group hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 cursor-pointer">
+          <div className="relative h-[350px] sm:h-[400px] lg:h-[450px] rounded-xl overflow-hidden group hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 cursor-pointer" data-aos="fade-right">
             <img
               alt="News Image"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -83,6 +83,8 @@ const NewsSection = () => {
               <div
                 key={index}
                 className="flex bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:scale-[1.02] hover:shadow-xl transition-all duration-300 cursor-pointer"
+                data-aos="fade-up"
+                data-aos-delay={`${index * 100}`}
               >
                 <div className="w-24 sm:w-32 lg:w-40 flex-shrink-0">
                   <img

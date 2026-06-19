@@ -9,7 +9,7 @@ const VisiMisi = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Teks Deskripsi */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6" data-aos="fade-right">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#223E40] tracking-tight leading-tight mb-6">
               Mengenal Lebih Dekat PP Aswaja An-Nahdliyah Panembahan
             </h1>
@@ -38,7 +38,7 @@ const VisiMisi = () => {
           </div>
 
           {/* Gambar Signboard */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6" data-aos="fade-left" data-aos-delay="150">
             <div className="relative overflow-hidden rounded-[2rem] shadow-xl p-2">
               <img 
                 src={bgHero} 
@@ -56,7 +56,7 @@ const VisiMisi = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           
           {/* KARTU VISI */}
-          <div className="bg-white rounded-xl shadow-md border-t-4 border-[#5E8B90] p-8 sm:p-10 min-h-[450px] transition-all hover:shadow-lg">
+          <div className="bg-white rounded-xl shadow-md border-t-4 border-[#5E8B90] p-8 sm:p-10 min-h-[450px] transition-all hover:shadow-lg" data-aos="fade-up">
             <h2 className="text-2xl font-bold text-[#436A6C] tracking-wide mb-8">
               VISI
             </h2>
@@ -66,7 +66,7 @@ const VisiMisi = () => {
           </div>
 
           {/* KARTU MISI */}
-          <div className="bg-white rounded-xl shadow-md border-t-4 border-[#223E40] p-8 sm:p-10 transition-all hover:shadow-lg">
+          <div className="bg-white rounded-xl shadow-md border-t-4 border-[#223E40] p-8 sm:p-10 transition-all hover:shadow-lg" data-aos="fade-up" data-aos-delay="100">
             <h2 className="text-2xl font-bold text-[#436A6C] tracking-wide mb-8">
               MISI
             </h2>

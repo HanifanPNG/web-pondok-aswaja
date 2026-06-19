@@ -50,7 +50,7 @@ const ContentGrid = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Column 1: Kegiatan Pondok */}
-          <div className="border border-gray-100 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+          <div className="border border-gray-100 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300" data-aos="fade-up">
             <div className="flex justify-between items-center mb-4 sm:mb-6">
               <h3 className="text-lg sm:text-xl font-bold text-aswaja-teal">
                 Kegiatan Pondok
@@ -102,7 +102,7 @@ const ContentGrid = () => {
           </div>
 
           {/* Column 2: Kajian Islami */}
-          <div className="border border-gray-100 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+          <div className="border border-gray-100 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
             <div className="flex justify-between items-center mb-4 sm:mb-6">
               <h3 className="text-lg sm:text-xl font-bold text-aswaja-teal">
                 Kajian Islami
@@ -155,7 +155,7 @@ const ContentGrid = () => {
           </div>
 
           {/* Column 3: Profil Pondok & Social */}
-          <div className="border border-gray-100 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300 md:col-span-2 lg:col-span-1">
+          <div className="border border-gray-100 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="200">
             <h3 className="text-lg sm:text-xl font-bold text-aswaja-teal mb-4 sm:mb-6">
               Profil Pondok
             </h3>

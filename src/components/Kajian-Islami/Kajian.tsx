@@ -35,7 +35,7 @@ const Kajian = () => {
         style={{ backgroundImage: `url('${bgHero}')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#436A6C] via-[#436a6c]/95 to-[#436a6c]/80" />
-        <div className="max-w-6xl mx-auto relative z-10">
+        <div className="max-w-6xl mx-auto relative z-10" data-aos="fade-up">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
             Kajian Islami
           </h1>
@@ -50,7 +50,7 @@ const Kajian = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {/* SEARCH BAR */}
-        <div className="flex items-center gap-3 max-w-md mb-12">
+        <div className="flex items-center gap-3 max-w-md mb-12" data-aos="fade-up">
           <div className="relative flex-1">
             <input
               type="text"
@@ -78,6 +78,8 @@ const Kajian = () => {
                 key={kajian.id}
                 to={`/kajian/${kajian.slug}`}
                 className="group flex flex-col bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-1"
+                data-aos="fade-up"
+                data-aos-delay={`${(kajian.id - 1) % 3 * 100}`}
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden bg-gray-200">

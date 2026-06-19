@@ -1,5 +1,8 @@
 // src/App.tsx
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import LandingPage from './components/LandingPage';
 import NewsPage from './components/berita-page/NewsPage';
 import BeritaDetail from './components/berita-page/BeritaDetail';
@@ -11,6 +14,15 @@ import BiografiPage from './components/biografi-page/BiografiPage';
 import InfoPsbPage from './components/info-psb-page/InfoPsbPage';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
   return (
     <Router>
       <Routes>

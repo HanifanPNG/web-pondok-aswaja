@@ -60,7 +60,7 @@ const InfoPsb = () => {
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
         
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl" data-aos="fade-up">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
               Penerimaan Santri Baru
             </h1>
@@ -92,7 +92,7 @@ const InfoPsb = () => {
 
       {/* SECTION 2: ALUR PENDAFTARAN */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#223E40] tracking-tight mb-4">
             Alur Pendaftaran
           </h2>
@@ -110,6 +110,8 @@ const InfoPsb = () => {
             <div 
               key={idx} 
               className="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col items-center text-center relative z-10 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
+              data-aos="fade-up"
+              data-aos-delay={`${idx * 100}`}
             >
               {/* Step Circle */}
               <div className={`w-12 h-12 rounded-full bg-[#43b190] flex items-center justify-center font-bold text-lg mb-4 shadow-md ring-4 ring-gray-50 group-hover:scale-110 transition-transform`}>
@@ -130,7 +132,7 @@ const InfoPsb = () => {
       <div className="bg-[#f0f5f5] py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-3xl mx-auto mb-10">
+          <div className="text-center max-w-3xl mx-auto mb-10" data-aos="fade-up">
             <h2 className="text-3xl font-extrabold text-[#223E40] mb-3">
               Informasi Lengkap PSB
             </h2>
@@ -166,7 +168,7 @@ const InfoPsb = () => {
           </div>
 
           {/* Tab Content */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 sm:p-10 transition-all duration-300">
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 sm:p-10 transition-all duration-300" data-aos="fade-up">
             {activeTab === 'persyaratan' ? (
               <div className="animate-fadeIn">
                 <h3 className="text-2xl font-bold text-aswaja-teal mb-6 flex items-center gap-2">
@@ -277,7 +279,7 @@ const InfoPsb = () => {
 
       {/* SECTION 4: INFORMASI LEBIH LANJUT (CONTACTS) */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
           <h2 className="text-3xl font-extrabold text-[#223E40] mb-4">
             Informasi Lebih Lanjut
           </h2>
@@ -294,6 +296,8 @@ const InfoPsb = () => {
               <div 
                 key={idx} 
                 className="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col justify-between hover:shadow-lg transition-shadow"
+                data-aos="fade-up"
+                data-aos-delay={`${idx * 100}`}
               >
                 <div>
                   <span className="text-[10px] font-bold text-aswaja-teal uppercase tracking-wider bg-aswaja-teal-light px-2.5 py-1 rounded-full">

@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
 const pengasuhData = [
@@ -6,7 +6,7 @@ const pengasuhData = [
     id: 1,
     name: "Prof. Dr. Kholid Mawardi S.Ag, M.Kom",
     role: "Pengasuh PonnPes Aswaja An-Nahdliyah Panembahan Banteran",
-    image: "./assets/img/pakkholid.png",
+    image: "./assets/img/pak-kholid.jpeg",
   },
   {
     id: 2,
@@ -59,6 +59,11 @@ const asatidzData = [
 const Biografi = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    // Refresh AOS when component mounts (in case of route navigation)
+    import('aos').then((AOS) => AOS.default.refresh());
+  }, []);
+
   const scrollLeft = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({ left: -360, behavior: 'smooth' });
@@ -85,7 +90,7 @@ const Biografi = () => {
       <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column: Image of Pengasuh */}
-          <div className="flex flex-col group">
+          <div className="flex flex-col group" data-aos="fade-right">
             {/* Curved Image Container matching the reference style */}
             <div className="relative overflow-hidden rounded-t-full rounded-b-[2.5rem] shadow-sm group-hover:shadow-md transition-all duration-500 bg-gray-50 aspect-[4/5] w-full">
               <img
@@ -111,7 +116,7 @@ const Biografi = () => {
           </div>
 
           {/* Right Column: Description Text (similar to VisiMisi.tsx) */}
-          <div className="flex flex-col">
+          <div className="flex flex-col" data-aos="fade-left" data-aos-delay="150">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#223E40] tracking-tight leading-tight mb-6">
               Mengenal Lebih Dekat Pengasuh Pondok Pesantren
             </h2>
@@ -147,7 +152,7 @@ const Biografi = () => {
           
           {/* Header Section with Carousel Navigation */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-12">
-            <div className="text-center sm:text-left">
+            <div className="text-center sm:text-left" data-aos="fade-up">
               <h3 className="text-2xl sm:text-3xl font-bold text-[#223E40] tracking-wide inline-block relative">
                 Asatidz & Pengurus Pondok
                 <span className="block w-16 h-1 bg-[#436A6C] mx-auto sm:mx-0 mt-4 rounded-full"></span>
@@ -183,6 +188,8 @@ const Biografi = () => {
               <div
                 key={asatidz.id}
                 className="w-[280px] sm:w-[320px] md:w-[340px] flex-shrink-0 snap-start bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100/80 group"
+                data-aos="fade-up"
+                data-aos-delay={`${(asatidz.id - 1) * 100}`}
               >
                 {/* Teacher Image */}
                 <div className={`relative h-72 sm:h-80 w-full overflow-hidden bg-gray-100 ${asatidz.bgClass || ""}`}>

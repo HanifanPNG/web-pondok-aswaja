@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12">
           {/* About */}
-          <div className="sm:col-span-1">
+          <div className="sm:col-span-1" data-aos="fade-up">
             <img
               alt="Footer Logo"
               className="h-16 sm:h-20 w-auto mb-4 sm:mb-6"
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation */}
-          <div className="sm:col-span-1">
+          <div className="sm:col-span-1" data-aos="fade-up" data-aos-delay="100">
             <h3 className="text-lg sm:text-xl font-bold mb-6 sm:mb-8">Navigasi</h3>
             <ul className="space-y-3 sm:space-y-4 text-sm font-medium">
               {navigationItems.map((item) => (
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Contact & Address */}
-          <div className="sm:col-span-2 md:col-span-2">
+          <div className="sm:col-span-2 md:col-span-2" data-aos="fade-up" data-aos-delay="200">
             <h3 className="text-lg sm:text-xl font-bold mb-6 sm:mb-8">Kontak</h3>
             <div className="space-y-4 sm:space-y-6">
               <div className="flex items-start">
