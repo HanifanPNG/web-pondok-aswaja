@@ -44,7 +44,7 @@ const NewsSection = () => {
             </h2>
             <div className="w-24 h-1 bg-[#436A6C] mx-0 mb-4 sm:mb-6"></div>
           </div>
-          x
+          <a href="/berita">Lihat Semua</a>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
