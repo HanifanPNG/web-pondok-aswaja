@@ -1,12 +1,12 @@
 import { useRef, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const pengasuhData = [
   {
     id: 1,
     name: "Prof. Dr. Kholid Mawardi S.Ag, M.Kom",
     role: "Pengasuh PonnPes Aswaja An-Nahdliyah Panembahan Banteran",
-    image: "./assets/img/pak-kholid.jpeg",
+    image: "../../../assets/img/pak-kholid.jpeg",
   },
   {
     id: 2,
@@ -64,18 +64,6 @@ const Biografi = () => {
     import('aos').then((AOS) => AOS.default.refresh());
   }, []);
 
-  const scrollLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -360, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 360, behavior: 'smooth' });
-    }
-  };
-
   return (
     <main className="min-h-screen bg-white font-sans antialiased text-gray-800">
       
@@ -99,7 +87,7 @@ const Biografi = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 onError={(e) => {
                   // Fallback to beautiful default avatar
-                  e.currentTarget.src = "../../assets/img/pak-kholid.jpeg";
+                  e.currentTarget.src = "../../../assets/img/ppaswaja_2.png";
                 }}
               />
             </div>
