@@ -99,7 +99,7 @@ const Biografi = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 onError={(e) => {
                   // Fallback to beautiful default avatar
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800";
+                  e.currentTarget.src = "../../assets/img/pak-kholid.jpeg";
                 }}
               />
             </div>
@@ -157,24 +157,6 @@ const Biografi = () => {
                 Asatidz & Pengurus Pondok
                 <span className="block w-16 h-1 bg-[#436A6C] mx-auto sm:mx-0 mt-4 rounded-full"></span>
               </h3>
-            </div>
-            
-            {/* Navigation Buttons */}
-            <div className="flex gap-3 mt-6 sm:mt-0">
-              <button 
-                onClick={scrollLeft}
-                className="w-11 h-11 rounded-full border border-[#436A6C]/30 flex items-center justify-center text-[#436A6C] hover:bg-[#436A6C] hover:text-white transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-white"
-                aria-label="Scroll left"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <button 
-                onClick={scrollRight}
-                className="w-11 h-11 rounded-full border border-[#436A6C]/30 flex items-center justify-center text-[#436A6C] hover:bg-[#436A6C] hover:text-white transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md bg-white"
-                aria-label="Scroll right"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
             </div>
           </div>
 
