@@ -12,6 +12,9 @@ import VisiMisiPage from './components/visi-misi-page/VisiMisiPage';
 import GaleriPage from './components/galeri-page/GaleriPage';
 import BiografiPage from './components/biografi-page/BiografiPage';
 import InfoPsbPage from './components/info-psb-page/InfoPsbPage';
+import NgalongBqpiPage from './components/program-page/NgalongBqpiPage';
+import TahfidzPage from './components/program-page/TahfidzPage';
+import KitabKuningPage from './components/program-page/KitabKuningPage';
 
 function App() {
   useEffect(() => {
@@ -48,6 +51,11 @@ function App() {
 
         {/* Halaman Info PSB */}
         <Route path="/info-psb" element={<InfoPsbPage />} />
+
+        {/* Halaman Program Unggulan */}
+        <Route path="/program/ngalong-bqpi" element={<NgalongBqpiPage />} />
+        <Route path="/program/tahfidz" element={<TahfidzPage />} />
+        <Route path="/program/kitab-kuning" element={<KitabKuningPage />} />
       </Routes>
     </Router>
   );

@@ -14,8 +14,8 @@ const InfoPsb = () => {
   const [activeTab, setActiveTab] = useState<'persyaratan' | 'prosedur'>('persyaratan');
 
   const contacts = [
-    { name: 'Mas Nur Rohman', phone: '081227528983', formattedPhone: '+6281227528983', role: 'Informasi Umum' },
-    { name: 'Abdul Azis', phone: '081227998337', formattedPhone: '+6281227998337', role: 'Informasi Umum' },
+    { name: 'Mas Nur Rohman', phone: '081227528983', formattedPhone: '+6281227528983' },
+    { name: 'Abdul Azis', phone: '081227998337', formattedPhone: '+6281227998337' },
   ];
 
   const timelineSteps = [
@@ -300,9 +300,6 @@ const InfoPsb = () => {
                 data-aos-delay={`${idx * 100}`}
               >
                 <div>
-                  <span className="text-[10px] font-bold text-aswaja-teal uppercase tracking-wider bg-aswaja-teal-light px-2.5 py-1 rounded-full">
-                    {contact.role}
-                  </span>
                   <h3 className="font-extrabold text-gray-800 text-lg mt-3 mb-1">
                     {contact.name}
                   </h3>

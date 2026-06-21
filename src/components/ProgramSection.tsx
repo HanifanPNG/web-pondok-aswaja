@@ -1,17 +1,21 @@
 import { ArrowRight, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const programs = [
   {
     title: 'Program Ngalong BQPI',
     description: 'Program untuk membantu mahasiswa UIN yang ingin mendapatkan sertifikat BQPI secara resmi lewat ngaji ngalong',
+    link: '/program/ngalong-bqpi',
   },
   {
     title: 'Program Tahfidz Al-Quran',
     description: 'Program menghafal Al-Quran dengan metode talaqqi dan muraja\'ah yang terstruktur',
+    link: '/program/tahfidz',
   },
   {
     title: 'Kajian Kitab Kuning',
     description: 'Pembelajaran kitab kuning klasik dengan metode sorogan dan bandongan',
+    link: '/program/kitab-kuning',
   },
 ];
 
@@ -38,10 +42,10 @@ const ProgramSection = () => {
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-aswaja-teal mb-3 sm:mb-4">{program.title}</h3>
               <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6 flex-grow">{program.description}</p>
-              <a className="text-aswaja-teal font-bold text-sm flex items-center hover:underline" href="#">
+              <Link to={program.link} className="text-aswaja-teal font-bold text-sm flex items-center hover:underline">
                 Selengkapnya
                 <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
